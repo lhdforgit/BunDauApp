@@ -1,0 +1,63 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="DayNightThemeApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BunDauTheme" parent="DayNightThemeApp" />
+
+
+    <style name="Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:background">#fff</item>
+        <item name="android:elevation">3dp</item>
+        <item name="navigationIcon">@drawable/ic_tool_bar</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <!--Button-->
+    <style name="ButtonPrimary" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:insetTop">@dimen/btn_inset</item>
+        <item name="android:insetBottom">@dimen/btn_inset</item>
+        <item name="android:stateListAnimator">
+            @animator/btn_state_list_anim
+        </item>
+        <item name="iconPadding">@dimen/btn_icon_padding</item>
+        <item name="rippleColor">@color/btn_ripple_color</item>
+        <item name="backgroundTint">@color/btn_bg_color_selector</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+    </style>
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/btn_padding_right</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="strokeWidth">@dimen/btn_stroke_size</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+        <item name="android:insetTop">@dimen/btn_inset</item>
+        <item name="android:insetBottom">@dimen/btn_inset</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="iconTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">?attr/colorAccent</item>
+        <item name="tint">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

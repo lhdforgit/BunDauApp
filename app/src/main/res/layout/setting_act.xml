@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tool_bar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Quản lý" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_normal_s">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/table_bt"
+                style="@style/ButtonPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Bàn"
+                android:textAllCaps="false"
+                android:textSize="@dimen/header_short_text_size" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/food_bt"
+                style="@style/ButtonPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/activity_normal_s"
+                android:layout_weight="1"
+                android:text="Món ăn"
+                android:textAllCaps="false"
+                android:textSize="@dimen/header_short_text_size"
+                app:backgroundTint="#d84315" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_normal_s">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/drink_bt"
+                style="@style/ButtonPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Nước uống"
+                android:textAllCaps="false"
+                android:textSize="@dimen/header_short_text_size"
+                app:backgroundTint="#0277bd" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/ButtonPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/activity_normal_s"
+                android:layout_weight="1"
+                android:backgroundTint="#c62828"
+                android:text="Khuyến mãi"
+                android:textAllCaps="false"
+                android:textSize="@dimen/header_short_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_normal_s">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/ButtonPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Nhân viên"
+                android:textAllCaps="false"
+                android:textSize="@dimen/header_short_text_size"
+                app:backgroundTint="#2e7d32" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/ButtonPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/activity_normal_s"
+                android:layout_weight="1"
+                android:text="Kho"
+                android:textAllCaps="false"
+                android:textSize="@dimen/header_short_text_size"
+                app:backgroundTint="#4e342e" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
