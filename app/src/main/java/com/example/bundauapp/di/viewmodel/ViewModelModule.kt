@@ -6,6 +6,8 @@ import com.example.bundauapp.presentation.main.MainViewModel
 import com.example.bundauapp.di.common.MyViewModelFactory
 import com.example.bundauapp.di.common.ViewModelKey
 import com.example.bundauapp.presentation.food.FoodViewModel
+import com.example.bundauapp.presentation.food.edit.FoodEditorViewModel
+import com.example.bundauapp.presentation.food.list.FoodListViewModel
 import com.example.bundauapp.presentation.order.OrderViewModel
 import com.example.bundauapp.presentation.setting.SettingViewModel
 import com.example.bundauapp.presentation.table.TableViewModel
@@ -43,4 +45,14 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(FoodViewModel::class)
     abstract fun bindFoodViewModel(viewModel: FoodViewModel): ViewModel?
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(FoodListViewModel::class)
+    abstract fun bindFoodListViewModel(viewModel: FoodListViewModel): ViewModel?
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(FoodEditorViewModel::class)
+    abstract fun bindFoodEditorViewModel(viewModel: FoodEditorViewModel): ViewModel?
 }

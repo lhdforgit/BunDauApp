@@ -2,6 +2,7 @@ package com.example.bundauapp.data.room
 
 import android.app.Application
 import androidx.room.Room
+import com.example.bundauapp.data.room.dao.FoodDao
 import com.example.bundauapp.data.room.dao.TableDao
 import dagger.Module
 import dagger.Provides
@@ -23,5 +24,11 @@ object DatabaseModule {
     @Provides
     fun provideTableDao(db: DatabaseMain): TableDao {
         return db.tableDao()
+    }
+
+    @Singleton
+    @Provides
+    fun provideFoodDao(db: DatabaseMain): FoodDao {
+        return db.foodDao()
     }
 }

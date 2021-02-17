@@ -24,9 +24,6 @@ abstract class AbsActivity<VM : ViewModel, VB : ViewDataBinding>(val clazz: KCla
 
     lateinit var binding: VB
 
-    /**
-     * Lấy view model của activity.
-     * */
     val viewModel: VM
         inline get() {
             return createViewModelLazy(clazz, { viewModelStore }, { viewModelFactory }).value
@@ -43,7 +40,7 @@ abstract class AbsActivity<VM : ViewModel, VB : ViewDataBinding>(val clazz: KCla
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
-            finish()
+            onBackPressed()
         }
         return super.onOptionsItemSelected(item)
     }

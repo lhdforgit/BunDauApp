@@ -5,12 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.*
 import kotlin.reflect.KClass
 
-/**
- * @author ndn
- * Created by ndn
- * Created on 2019-12-03
- * com.halo.presentation.utils
- */
 @MainThread
 inline fun <reified VM : ViewModel> AppCompatActivity.viewModels(
         noinline ownerProducer: () -> ViewModelStoreOwner = { this },

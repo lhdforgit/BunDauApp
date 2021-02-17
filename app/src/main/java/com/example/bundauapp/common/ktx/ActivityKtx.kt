@@ -8,12 +8,6 @@ import android.view.View
 import android.view.Window
 import android.view.WindowManager
 
-/**
- * Create by ndn
- * Create on 7/11/20
- * com.halo.common.utils.ktx
- */
-
 fun Activity.fullScreen() {
     window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
             // Set the content to appear under the system bars so that the

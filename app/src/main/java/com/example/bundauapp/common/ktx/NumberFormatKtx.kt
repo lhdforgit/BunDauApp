@@ -1,16 +1,13 @@
 package com.example.bundauapp.common.ktx
 
 import android.annotation.SuppressLint
-import com.example.bundauapp.common.ktx.NumberFormat.suffixes
+import com.example.bundauapp.common.ktx.NumberFormatKtx.suffixes
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.text.NumberFormat
 import java.util.*
 
-/**
- * Created by ndn on 10/15/18.
- */
-object NumberFormat {
+object NumberFormatKtx {
 
     /**
      * {@see https://stackoverflow.com/questions/12490793/android-currency-symbol-ordering}

@@ -13,13 +13,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 
 /**
- * @author ndn
- * Created by ndn
- * Created on 2019-12-03
- * com.halo.presentation.utils
- */
-
-/**
  * Kotlin Extensions for simpler, easier and funw way
  * of launching of Activities
  *

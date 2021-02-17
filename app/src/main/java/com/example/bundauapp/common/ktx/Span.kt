@@ -1,9 +1,3 @@
-/*
- * Copyright 10/10/2018 Hahalolo. All rights reserved.
- *
- * https://help.hahalolo.com/commercial_terms/
- */
-
 package com.example.bundauapp.common.ktx
 
 import android.text.SpannableStringBuilder

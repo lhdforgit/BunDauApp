@@ -10,7 +10,7 @@ import com.example.bundauapp.data.room.entity.TableEntity
 @Dao
 interface TableDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(vararg search: TableEntity)
+    fun insert(vararg table: TableEntity)
 
     @Query("SELECT * FROM table_tb ORDER BY number ASC")
     fun getListTable(): LiveData<List<TableEntity>>?
